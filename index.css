@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Karla', sans-serif;
+    src: url(Karla-VariableFont_wght.ttf);
+}
+/* Hero */
+body {
+    display: flex;
+    flex-direction: column;
+    cursor:initial;
+    font-family: 'Karla', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0%;
+    max-width: 600px;
+    max-height: 550px;
+    background-color: #1F2937;
+    }
+
+div {
+    padding: 0px;
+    margin: 0;
+}
+
+.hero {
+    margin-top: 115px;
+    margin-left: 52px;
+    margin-right: 144px;
+    padding-bottom: 0%;
+}
+
+.head-text {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+header {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+span:first-child {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 40px;
+    color: white;
+}
+
+span:last-child {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 40px;
+    color: #10B981;    
+}
+    
+p {
+    color: #D5D4D8;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 0px;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* components */
+
+/* checkboxes */
+
+input[type=checkbox] {
+    box-shadow: none;
+    accent-color: #10B981 ;
+  }
+
+#checkboxes {
+    color: #D5D4D8;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    font-size: 19px;
+    padding: 0px;
+}
+/* button */
+
+
+.random-btn {
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    height: 42px;
+    width: 191px;
+    margin-top: 51px;
+    padding: 9px, 15px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 5px;
+    transition: .25s all;
+}
+
+.random-btn:active {
+    box-shadow: 0px 0px 1px 1px white;
+}
+
+button {
+    box-shadow: none;
+    background-color: #273549;
+    border: none;
+    cursor: copy;
+    color: #10B981;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    touch-action: manipulation;
+}
+
+button:active {
+    box-shadow: 0px 0px 1px 1px white;
+}
+
+#controls {
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 76px;
+    gap: 16px 24px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.length-control {
+    height: 24px;
+    display: flex;
+    box-shadow: none;
+}
+
+.length-control > input {
+    color: white;
+    height: 100%;
+    width: 3em;
+    text-align: center;
+    background: #273549;
+    box-shadow: none;
+}
+
+.length-control > input:focus {
+    background: rgba(0,0,0,0.1);
+    /* box-shadow: none;
+    outline: none; */
+}
+
+.length-control > button {
+    background-color: #10B981;
+    color: white;
+    padding: 0 12px;
+    font-weight: 500;
+}
+
+.length-control > button#decrement {
+    border-radius: 12px 0 0 12px;
+}
+
+.length-control > button#increment {
+    border-radius: 0 12px 12px 0;
+}
+
+
+/* password section */
+
+#password-section {
+    align-self: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #2F3E53;
+    justify-content: space-between;
+}
+.password-box {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 39px;
+    width: 231px;
+    height: 36px;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#pass-box-one {
+    text-align: center;
+    cursor: copy;
+    color: #10B981;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#pass-box-two {
+    text-align: center;
+    cursor: copy;
+    color: #10B981;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pop-up {
+    position: fixed;
+    background: #10B981;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.hidden {
+    display: none;
+}

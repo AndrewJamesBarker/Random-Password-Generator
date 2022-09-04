@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="Karla-VariableFont_wght.ttf">
+    </head>
+    <body>
+        <div class="hero">
+            <header>
+                </h1 class="head-text">
+                    <span>Generate a</span><br>
+                    <span>random Password</span>
+                </h1>
+            </header>
+            <p>Never use an insecure password again.</p>
+            <button onclick="passGen()" type="button" class="random-btn">Generate passwords</button>
+            <div id="controls">
+                <div>
+                    <label for="password-length">Length: (8-20)</label>
+                    <div class="length-control">
+                        <button id="decrement">-</button>
+                        <input type="number" id="password-length" min="8" max="20" inputmode="numeric">
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <form id="checkboxes">
+                <input onclick="numBox()" type="checkbox" id="numbers" name="Numbers" value="">
+                <label for="numbers">+ Numbers</label><br>
+                <input onclick="specBox()" type="checkbox" id="special-char" name="Special Characters" value="">
+                <label for="specialChar">+ Special Characters</label><br>
+            </form>
+        </div> 
+        
+        <div id="password-section">
+            <div class="password-box">
+                <button onclick="clickCopy('boxOne')" type="text" id="pass-box-one" aria-hidden="true"></button>
+            </div>
+            <div class="password-box">
+                <button onclick="clickCopy('boxTwo')" type="text" id="pass-box-two" aria-hidden="true"></button>
+        </div>
+
+        <div id="pop-up" class="pop-up">Password copied to clipboard</div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+    
